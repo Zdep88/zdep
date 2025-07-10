@@ -6,12 +6,12 @@ const mathsController = {
 
     randomDice(req, res) {
         const value = Math.floor(Math.random() * 6) + 1;
-        res.json({ prompt: "Random boolean", value });
+        res.json({ prompt: "Random dice 6", value });
     },
 
     randomDice20(req, res) {
         const value = Math.floor(Math.random() * 20) + 1;
-        res.json({ prompt: "Random boolean", value });
+        res.json({ prompt: "Random dice 20", value });
     }
 }
 
