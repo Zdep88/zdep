@@ -6,5 +6,6 @@ const router = new Router();
 
 router.get('/randomBoolean', mathsController.randomBoolean);
 router.get('/randomCard', cardController.randomCard);
+router.get('/allCards', cardController.allCards);
 
 export default router;
