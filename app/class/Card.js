@@ -11,7 +11,7 @@ class Card {
         this.color = Math.floor(index / 13);
         this.valueLabel = valueMap[this.value];
         this.colorLabel = colorMap[this.color];
-        this.skinName = `${process.env.URL}/cards/_${this.valueLabel}${fileColorMap[this.color]}.bmp`;
+        this.fileUrl = `${process.env.URL}/cards/_${this.valueLabel}${fileColorMap[this.color]}.bmp`;
     }
 }
 
