@@ -8,7 +8,7 @@
     "start": "node app/index.js",
     "dev": "node --watch app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "refreshServer" : "sudo rm -r node_modules/ .env git checkout main && git pull && npm run boot && npm start"
+    "refreshServer" : "sudo rm -r node_modules/ .env && git checkout main && git pull && npm run boot && npm start"
   },
   "repository": {
     "type": "git",
