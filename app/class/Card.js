@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 const valueMap = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 const colorMap = ["♦", "♠", "♥", "♣"];
 const fileColorMap = ["d", "s", "h", "c"];
@@ -9,7 +11,7 @@ class Card {
         this.color = Math.floor(index / 13);
         this.valueLabel = valueMap[this.value];
         this.colorLabel = colorMap[this.color];
-        this.skinName = `http://zdep.fr/cards/_${this.valueLabel}${fileColorMap[this.color]}.bmp`;
+        this.skinName = `${process.env.URL}/cards/_${this.valueLabel}${fileColorMap[this.color]}.bmp`;
     }
 }
 

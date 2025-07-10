@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "boot": "npm i && sudo cp .env.copy .env && sudo nano .env",
+    "boot": "npm i && cp .env.copy .env && sudo nano .env",
     "start": "node app/index.js",
     "dev": "node --watch app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "refreshServer" : "git checkout main && git pull && npm start"
+    "refreshServer" : "sudo rm -r node_modules/ .env git checkout main && git pull && npm run boot && npm start"
   },
   "repository": {
     "type": "git",

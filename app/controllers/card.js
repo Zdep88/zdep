@@ -1,4 +1,4 @@
-import Card from "../card/Card.js";
+import Card from "../class/Card.js";
 
 const cardController = {
     randomCard(req, res) {
